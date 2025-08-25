@@ -4,6 +4,7 @@ import "./globals.css";
 import { SmoothCursor } from "@/components/magicui/smooth-cursor";
 import { ThemeProvider } from "@/components/theme-provider"
 import { DockDemo } from "@/components/navbar";
+import { TextReveal } from "@/components/magicui/text-reveal";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -40,6 +41,9 @@ export default function RootLayout({
           <SmoothCursor />
           <DockDemo/>
           </ThemeProvider>
+          <div className="max-w-6xl mx-auto py-10 px-4">
+            <TextReveal>Just Do It. Don't Be a Stupid Man</TextReveal>
+          </div>
       </body>
     </html>
   );
